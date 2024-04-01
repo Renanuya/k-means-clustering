@@ -39,13 +39,13 @@ for i in range(1, 5):
     c1, c2 = find_cluster(last_c1, last_c2)
 
     table = Table(title=f"C1 = {c1:.2f} / C2 = {c2:.2f}")
-    table.add_column("Xi", justify="center", style="cyan", no_wrap=False)
-    table.add_column("C1", justify="center", style="cyan", no_wrap=False)
-    table.add_column("C2", justify="center", style="cyan", no_wrap=False)
-    table.add_column("Distance 1", justify="center", style="cyan", no_wrap=False)
-    table.add_column("Distance 2", justify="center", style="cyan", no_wrap=False)
-    table.add_column("Nearest Cluster", justify="center", style="cyan", no_wrap=False)
-    table.add_column("New Centroid", justify="center", style="cyan", no_wrap=False)
+    table.add_column("Xi", justify="center", style="medium_spring_green", no_wrap=False)
+    table.add_column("C1", justify="center", style="medium_spring_green", no_wrap=False)
+    table.add_column("C2", justify="center", style="medium_spring_green", no_wrap=False)
+    table.add_column("Distance 1", justify="center", style="medium_spring_green", no_wrap=False)
+    table.add_column("Distance 2", justify="center", style="medium_spring_green", no_wrap=False)
+    table.add_column("Nearest Cluster", justify="center", style="medium_spring_green", no_wrap=False)
+    table.add_column("New Centroid", justify="center", style="medium_spring_green", no_wrap=False)
 
     for age in age_array:
         c1_distance = abs(age - last_c1)
